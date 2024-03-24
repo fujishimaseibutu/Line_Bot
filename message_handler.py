@@ -75,7 +75,7 @@ class MessageHandler:
         r=source.find('"',l+1)
         type=source[l+1:r]
         notes=[]
-        text=str(id)
+        # text=str(id)
         if type=='user':
             if user_status[id]==3:
                 text='捕獲した場所を教えて下さい。以下のようにお答えください。例：福井県〇〇市〇〇町〇〇番地'
