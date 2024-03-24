@@ -10,15 +10,15 @@ from linebot import (
 
 line_bot_api = LineBotApi(os.getenv('CHANNEL_ACCESS_TOKEN'))
 
-# Dropbox(Salmonfs)のアクセストークン
-DROPBOX_ACCESS_TOKEN = 'sl.BnHRHWk2rXzCQdmN0qckxTISBxln8jxuAQw-2gllG4gjeLbgUU1D1gIavCoy0C9qXeLmm4XMKSnI3_jV1OIqJwew8c2N4fQiFwd9YASQEnDLforzgksimjxKSH0Kt9eJt6Doh6i54Ifp'
-# Dropbox(Salmonfs)のリフレッシュトークン
+# Dropboxのアクセストークン
+#DROPBOX_ACCESS_TOKEN = 'sl.BnHRHWk2rXzCQdmN0qckxTISBxln8jxuAQw-2gllG4gjeLbgUU1D1gIavCoy0C9qXeLmm4XMKSnI3_jV1OIqJwew8c2N4fQiFwd9YASQEnDLforzgksimjxKSH0Kt9eJt6Doh6i54Ifp'
+# Dropboxのリフレッシュトークン
 DROPBOX_REFRESH_TOKEN=os.getenv('CHANNEL_REFRESH_TOKEN')
 # Dropboxのフォルダ
 # Dropboxのルートにこの名前のフォルダを事前に作っておく必要がある
 DROPBOX_ROOT = '/fujishima_weasel/'
 DROPBOX_IMAGE_ROOT='/fujishima_image/'
-client = dropbox.Dropbox(app_key='j12zedwszd957i0',app_secret='pjdv71jycvbcl23',oauth2_refresh_token='QoetReVtRbwAAAAAAAAAAb9mmdEMqnqRQwXP2xU-agmu-oFWuyKPjnPUDkuyAgWC')
+client = dropbox.Dropbox(app_key='j12zedwszd957i0',app_secret='pjdv71jycvbcl23',oauth2_refresh_token=DROPBOX_REFRESH_TOKEN)
 
 send_num=[0]
 
