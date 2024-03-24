@@ -114,11 +114,11 @@ def on_postback(event):
 @handler.add(MessageEvent,message=ImageMessage)
 def handle_image(event):
     
-    message_id=event.message.id
-    content = line_bot_api.get_message_content(message_id)
-    line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text=str(content)))
+    # message_id=event.message.id
+    # content = line_bot_api.get_message_content(message_id)
+    # line_bot_api.reply_message(
+    #         event.reply_token,
+    #         TextSendMessage(text=str(content)))
     
     MessageHandler.getimage(event)
 
