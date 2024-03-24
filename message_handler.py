@@ -18,7 +18,7 @@ DROPBOX_REFRESH_TOKEN=os.getenv('CHANNEL_REFRESH_TOKEN')
 # Dropboxのルートにこの名前のフォルダを事前に作っておく必要がある
 DROPBOX_ROOT = '/fujishima_weasel/'
 DROPBOX_IMAGE_ROOT='/fujishima_image/'
-client = dropbox.Dropbox(app_key='j12zedwszd957i0',app_secret='pjdv71jycvbcl23',oauth2_refresh_token=DROPBOX_REFRESH_TOKEN)
+client = dropbox.Dropbox(app_key='0kpb0zdvuz3lt10',app_secret='11t1w6xb0mh18kb',oauth2_refresh_token=DROPBOX_REFRESH_TOKEN)
 
 send_num=[0]
 
