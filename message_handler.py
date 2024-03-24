@@ -28,6 +28,9 @@ itachi_point={}#二ホンイタチの特徴に当てはまる場合+1,シベリ�
 user_image={}#写真を上げてくれた枚数（イタチの画像の名前に使用）
 send_mode={}#ユーザーに送るメッセージの種類を決定（1のときテキストメッセージ、2のときテンプレートメッセージ）
 
+#テスト用すぐ消して
+tmptest=''
+
 class MessageHandler:
 
     def makenotes(status):
@@ -246,6 +249,7 @@ class MessageHandler:
                 client.files_upload(open(local_filepath, "rb").read(), os.path.join(DROPBOX_ROOT, dropbox_filepath))
         # answer=text
         #text='A'
+        text=tmptest
         return send_mode[id],text,notes
 
     
@@ -270,6 +274,7 @@ class MessageHandler:
             for c in content.iter_content():
                 f.write(c)
         f.close()
+        tmptest=filename
         #ファイルアップロード
         # client.files_save_url('/fujishima_image/'+filename+'.jpg',content)
         client.files_upload(open(filename+'.txt', "rb").read(), os.path.join(DROPBOX_IMAGE_ROOT, filename+'.jpg'))
