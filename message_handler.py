@@ -29,7 +29,7 @@ user_image={}#写真を上げてくれた枚数（イタチの画像の名前に
 send_mode={}#ユーザーに送るメッセージの種類を決定（1のときテキストメッセージ、2のときテンプレートメッセージ）
 
 #テスト用すぐ消して
-tmptest=''
+tmptest='a'
 
 class MessageHandler:
 
